@@ -85,4 +85,11 @@ const idiomas = {
 document.getElementById('cta-button').addEventListener('click', () => {
     window.location.href = 'servicios.html';
  });
-   
+   // Ejemplo de verificación de sesión en scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+   const isAuthenticated = sessionStorage.getItem("isAuthenticated");
+
+   if (!isAuthenticated && (window.location.pathname === '/servicios.html' || window.location.pathname === '/tarifas.html')) {
+       window.location.href = 'login.html';
+   }
+});
