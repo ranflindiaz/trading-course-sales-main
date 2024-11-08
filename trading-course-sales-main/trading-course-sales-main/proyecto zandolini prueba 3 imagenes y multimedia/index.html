@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-      <meta charset="UTF-8">
-      <title>Iniciar Sesión - Zandoli Invest Srl</title>
-      <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-      <h2>Iniciar Sesión</h2>
-      <form action="/login" method="POST">
-          <label for="username">Usuario:</label>
-          <input type="text" id="username" name="username" required>
-          
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" required>
-          
-          <button type="submit">Ingresar</button>
-      </form>
-  </body>
-  </html>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Zandoli Invest Srl - Asesoría en Trading de Divisas</title>
+   <title>Iniciar Sesión - Zandoli Invest Srl</title>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
-   
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Carrito de Compras</title>
-   <style>
+   <!-- <style>
        body { font-family: Arial, sans-serif; }
        .product { margin-bottom: 15px; }
        .product h3 { margin: 5px 0; }
        .cart { margin-top: 20px; }
        .cart-item { display: flex; justify-content: space-between; margin-bottom: 5px; }
        .cart-total { font-weight: bold; }
-   </style>
+   </style> -->
 </head>
 <body>
-
-   **************************************************************************
    <!-- Encabezado -->
    <header>
          <a class="logo" href="index.html">
@@ -51,8 +28,7 @@
             <li><a href="tarifas.html">Nuestros servicios</a></li>
             <li><a href="contacto.html">Nuestro equipo</a></li>
             <li><a href="terminos.html">Tarifas</a></li>
-            <li><a href="terminos.html">contacte con nosotros</a></li>
-
+            <li><a href="terminos.html">Contactar</a></li>
          </ul>
       </nav>
       <div class="language-buttons">
@@ -62,6 +38,18 @@
          <button class="deBtn">DE</button>
       </div>
    </header>
+   <div class="sessionForm">
+      <form action="" method="POST">
+         <h2>Iniciar Sesión</h2>
+         <label for="username">Usuario:</label>
+         <input type="text" id="username" name="username" required>
+         
+         <label for="password">Contraseña:</label>
+         <input type="password" id="password" name="password" required>
+         
+         <button type="submit">Ingresar</button>
+      </form>
+   </div>
    <main>
    <!-- Hero Banner -->
    <section id="inicio" class="hero">

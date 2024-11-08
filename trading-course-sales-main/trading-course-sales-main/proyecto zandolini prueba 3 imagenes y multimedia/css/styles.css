@@ -58,6 +58,10 @@ nav a:hover {
 
 } */
 
+.sessionForm {
+    border: 2px pink solid;
+}
+
 main {
     display: flex;
     flex-direction: column;
