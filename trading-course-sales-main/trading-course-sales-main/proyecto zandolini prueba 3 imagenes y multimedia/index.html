@@ -5,15 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Iniciar Sesión - Zandoli Invest Srl</title>
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="./assets/css/icomoon.css" />
    <link rel="stylesheet" href="css/styles.css">
-   <!-- <style>
-       body { font-family: Arial, sans-serif; }
-       .product { margin-bottom: 15px; }
-       .product h3 { margin: 5px 0; }
-       .cart { margin-top: 20px; }
-       .cart-item { display: flex; justify-content: space-between; margin-bottom: 5px; }
-       .cart-total { font-weight: bold; }
-   </style> -->
+   
 </head>
 <body>
    <!-- Encabezado -->
@@ -37,19 +31,50 @@
          <button class="frBtn">FR</button>
          <button class="deBtn">DE</button>
       </div>
+      <section class="login-modal">
+         <div class="login-modal__close-btn">
+            <i class="icon-cross"></i>
+         </div>
+         <div class="login-modal__container" id="modal-container">
+            <div class="login-modal__info">
+               <div class="login">
+                  Login
+                  <div class="logo__sub">By Wolves</div>
+               </div>
+               <h2>Don't miss out this chance!</h2>
+               <p class="login-modal__message">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Doloribus, magnam nam, ducimus consectetur, maiores vero
+                  distinctio quidem dolor inventore accusantium reiciendis.
+                  Accusamus ipsa ipsum enim alias unde id veritatis error!
+               </p>
+               <div class="login-modal__error-message">
+                  Sorry this is not a valid email.
+               </div>
+               <form class="login-modall__form">
+                  <input
+                     id="emailInput"
+                     type="text"
+                     class="login-modall__input"
+                     placeholder="email@mail.com"
+                  />
+                  <button class="login-modal__button">Send</button>
+               </form>
+               <div class="login-modal__decline">I'm not interested.</div>
+            </div>
+            <div class="login-modal__img">
+               <img src="" alt="Login image"/>
+            </div>
+            <div class="email-thankyou">
+               <div class="email-thankyou__title">Thank You</div>
+               <p class="email-thankyou__message">
+                  Check your email, we sent you some instructions and welcome to our
+                  community!
+               </p>
+            </div>
+         </div>
+      </section>
    </header>
-   <div class="sessionForm">
-      <form action="" method="POST">
-         <h2>Iniciar Sesión</h2>
-         <label for="username">Usuario:</label>
-         <input type="text" id="username" name="username" required>
-         
-         <label for="password">Contraseña:</label>
-         <input type="password" id="password" name="password" required>
-         
-         <button type="submit">Ingresar</button>
-      </form>
-   </div>
    <main>
    <!-- Hero Banner -->
    <section id="inicio" class="hero">
@@ -201,6 +226,6 @@
 </footer>
   <!-- Scripts -->
   <script src="scripts.js"></script>
-
+  <script src="modal.js" ></script>
 </body>
 </html>
