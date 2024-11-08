@@ -23,8 +23,22 @@
    <title>Zandoli Invest Srl - Asesoría en Trading de Divisas</title>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
+   
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrito de Compras</title>
+   <style>
+       body { font-family: Arial, sans-serif; }
+       .product { margin-bottom: 15px; }
+       .product h3 { margin: 5px 0; }
+       .cart { margin-top: 20px; }
+       .cart-item { display: flex; justify-content: space-between; margin-bottom: 5px; }
+       .cart-total { font-weight: bold; }
+   </style>
 </head>
 <body>
+
+   **************************************************************************
    <!-- Encabezado -->
    <header>
          <a class="logo" href="index.html">
@@ -38,7 +52,7 @@
             <li><a href="contacto.html">Nuestro equipo</a></li>
             <li><a href="terminos.html">Tarifas</a></li>
             <li><a href="terminos.html">contacte con nosotros</a></li>
-            
+
          </ul>
       </nav>
       <div class="language-buttons">
@@ -113,6 +127,36 @@
    </form>
 </section>
 
+<!-- Carrito de Compras -->
+<section class="cart">
+   <h2>Carrito de Compras</h2>
+   <div id="cartItems"></div>
+   <p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+   <button onclick="checkout()">Finalizar Compra</button>
+</section>
+
+
+
+<section id="cursos">
+   <h2>Formación en Trading</h2>
+   <div class="curso" id="curso1">
+       <h3>Curso 1 (Sell & Buy)</h3>
+       <p>Precio: $39.90 USD</p>
+       <button onclick="addToCart('Curso 1', 39.90)">Agregar al carrito</button>
+   </div>
+   <div class="curso" id="curso2">
+       <h3>Curso 2 (Toro)</h3>
+       <p>Precio: $49.90 USD</p>
+       <button onclick="addToCart('Curso 2', 49.90)">Agregar al carrito</button>
+   </div>
+   <div class="curso" id="curso3">
+       <h3>Curso 3</h3>
+       <p>Precio: $59.90 USD</p>
+       <button onclick="addToCart('Curso 3', 59.90)">Agregar al carrito</button>
+   </div>
+</section>
+
+-------------------------------------------------------------------------------
 <button id="comprar-curso1">Comprar Curso 1</button>
 <button id="comprar-curso2">Comprar Curso 2</button>
 <button id="comprar-curso3">Comprar Curso 3</button>
@@ -169,5 +213,6 @@
 </footer>
   <!-- Scripts -->
   <script src="scripts.js"></script>
+
 </body>
 </html>

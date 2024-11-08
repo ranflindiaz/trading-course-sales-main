@@ -148,6 +148,30 @@ header .social-icons a:hover {
     border-radius: 8px;
 }
 
+.cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+
 /* Footer */
 footer {
     background-color: #1d1d1d;
