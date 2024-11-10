@@ -313,8 +313,10 @@ header .social-icons a:hover {
     border-radius: 8px;
 }
 
+
+/* cart Section */
 .cart {
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     padding: 20px;
     margin-top: 20px;
 }
