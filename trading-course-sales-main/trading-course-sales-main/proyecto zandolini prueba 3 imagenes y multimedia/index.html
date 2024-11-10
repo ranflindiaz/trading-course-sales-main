@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+      <meta charset="UTF-8">
+      <title>Iniciar Sesión - Zandoli Invest Srl</title>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      <h2>Iniciar Sesión</h2>
+      <form action="/login" method="POST">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <button type="submit">Ingresar</button>
+      </form>
+  
+  
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Iniciar Sesión - Zandoli Invest Srl</title>
@@ -8,8 +25,21 @@
    <link rel="stylesheet" href="./assets/css/icomoon.css" />
    <link rel="stylesheet" href="css/styles.css">
    
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrito de Compras</title>
+   <style>
+       body { font-family: Arial, sans-serif; }
+       .product { margin-bottom: 15px; }
+       .product h3 { margin: 5px 0; }
+       .cart { margin-top: 20px; }
+       .cart-item { display: flex; justify-content: space-between; margin-bottom: 5px; }
+       .cart-total { font-weight: bold; }
+   </style>
 </head>
 <body>
+
+   
    <!-- Encabezado -->
    <header>
          <a class="logo" href="index.html">
@@ -22,58 +52,15 @@
             <li><a href="tarifas.html">Nuestros servicios</a></li>
             <li><a href="contacto.html">Nuestro equipo</a></li>
             <li><a href="terminos.html">Tarifas</a></li>
-            <li><a href="terminos.html">Contactar</a></li>
+            <li><a href="terminos.html">contacte con nosotros</a></li>
+
          </ul>
       </nav>
       <div class="language-buttons">
-         <a id="login" class="login">Login</a>
-         <button class="enBtn">EN</button>
-         <button class="frBtn">FR</button>
-         <button class="deBtn">DE</button>
+         
+          <button class="enBtn">EN</button>
+         
       </div>
-      <section class="login-modal">
-         <div class="login-modal__close-btn">
-            <i class="icon-cross"></i>
-         </div>
-         <div class="login-modal__container" id="modal-container">
-            <div class="login-modal__info">
-               <div class="login">
-                  Login
-                  <div class="logo__sub">By Wolves</div>
-               </div>
-               <h2>Don't miss out this chance!</h2>
-               <p class="login-modal__message">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Doloribus, magnam nam, ducimus consectetur, maiores vero
-                  distinctio quidem dolor inventore accusantium reiciendis.
-                  Accusamus ipsa ipsum enim alias unde id veritatis error!
-               </p>
-               <div class="login-modal__error-message">
-                  Sorry this is not a valid email.
-               </div>
-               <form class="login-modall__form">
-                  <input
-                     id="emailInput"
-                     type="text"
-                     class="login-modall__input"
-                     placeholder="email@mail.com"
-                  />
-                  <button class="login-modal__button">Send</button>
-               </form>
-               <div class="login-modal__decline">I'm not interested.</div>
-            </div>
-            <div class="login-modal__img">
-               <img src="" alt="Login image"/>
-            </div>
-            <div class="email-thankyou">
-               <div class="email-thankyou__title">Thank You</div>
-               <p class="email-thankyou__message">
-                  Check your email, we sent you some instructions and welcome to our
-                  community!
-               </p>
-            </div>
-         </div>
-      </section>
    </header>
    <main>
    <!-- Hero Banner -->
@@ -103,6 +90,7 @@
    <h2>Formación en Trading</h2>
    <ul>
       <li>Curso 1 (Sell & Buy)</li>
+       <!-- <img class="curso 1" src="imagenes/" alt="imagen de curso"> -->
       <li>Curso 2 (Toro) - Requiere completar Curso 1</li>
       <li>Curso 3 - Requiere completar Curso 2</li>
    </ul>
@@ -226,6 +214,6 @@
 </footer>
   <!-- Scripts -->
   <script src="scripts.js"></script>
-  <script src="modal.js" ></script>
+
 </body>
 </html>
